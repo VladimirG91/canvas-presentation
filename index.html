@@ -1,40 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/league.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <p>Page 1</p>
+          <h1>Canvas</h1>
+        </section>
+        <section data-auto-animate>
+          <h3>HTML</h3>
+          <pre><code data-trim data-noescape>
+						&lt;canvas id="canvas"&gt;&lt;/canvas&gt;
+					</code>
+					</pre>
+        </section>
+        <section data-auto-animate>
+          <h3>HTML</h3>
+          <pre><code data-trim data-noescape>
+						&lt;canvas id="canvas"&gt;&lt;/canvas&gt;
+					</code>
+					</pre>
+          <h3>JavaScript</h3>
+          <pre><code data-trim data-noescape>
+						const canvas = document.getElementById("canvas");
+						const ctx = canvas.getContext("2d");
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+						ctx.fillStyle = "green";
+						ctx.fillRect(10, 10, 150, 100);
+					</code>
+					</pre>
+        </section>
+        <section data-auto-animate>
+          <h3>HTML</h3>
+          <pre><code data-trim data-noescape>
+						&lt;canvas id="canvas"&gt;&lt;/canvas&gt;
+					</code>
+					</pre>
+          <h3>JavaScript</h3>
+          <pre><code data-trim data-noescape>
+						const canvas = document.getElementById("canvas");
+						const ctx = canvas.getContext("2d");
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+						ctx.fillStyle = "green";
+						ctx.fillRect(10, 10, 150, 100);
+					</code>
+					</pre>
+          <img src="./examples/assets/result.PNG" alt="result" />
+        </section>
+        <section>Slide 4</section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
