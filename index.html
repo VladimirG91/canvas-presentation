@@ -19,15 +19,16 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
+        <section data-auto-animate>
           <h1>Canvas</h1>
         </section>
         <section data-auto-animate>
-          <h3>HTML</h3>
-          <pre><code data-trim data-noescape>
-						&lt;canvas id="canvas"&gt;&lt;/canvas&gt;
-					</code>
-					</pre>
+          <h1>Canvas</h1>
+          <p>
+            The Canvas API provides a means for drawing graphics via JavaScript and the HTML
+            &lt;canvas&gt; element. Among other things, it can be used for animation, game graphics,
+            data visualization, photo manipulation, and real-time video processing.
+          </p>
         </section>
         <section data-auto-animate>
           <h3>HTML</h3>
@@ -35,7 +36,16 @@
 						&lt;canvas id="canvas"&gt;&lt;/canvas&gt;
 					</code>
 					</pre>
-          <h3>JavaScript</h3>
+        </section>
+        <section data-auto-animate>
+          <h3>Basic example:</h3>
+          <p>This simple example draws a green rectangle onto a canvas.</p>
+          <h4>HTML</h4>
+          <pre><code data-trim data-noescape>
+						&lt;canvas id="canvas"&gt;&lt;/canvas&gt;
+					</code>
+					</pre>
+          <h4>JavaScript</h4>
           <pre><code data-trim data-noescape>
 						const canvas = document.getElementById("canvas");
 						const ctx = canvas.getContext("2d");
@@ -46,12 +56,12 @@
 					</pre>
         </section>
         <section data-auto-animate>
-          <h3>HTML</h3>
+          <h4>HTML</h4>
           <pre><code data-trim data-noescape>
 						&lt;canvas id="canvas"&gt;&lt;/canvas&gt;
 					</code>
 					</pre>
-          <h3>JavaScript</h3>
+          <h4>JavaScript</h4>
           <pre><code data-trim data-noescape>
 						const canvas = document.getElementById("canvas");
 						const ctx = canvas.getContext("2d");
@@ -86,6 +96,27 @@
           data-background-interactive>
           <h3>Some cool example on canvas</h3>
         </section>
+        <section>
+          <h2>Chart.js</h2>
+        </section>
+        <section data-background-iframe="https://www.chartjs.org/"></section>
+
+        <section>
+          <div class="r-stack">
+            <h3>Chart.js example</h3>
+            <img class="fragment" src="./examples/assets/1.jpg" />
+            <img class="fragment" src="./examples/assets/2.jpg" />
+            <img class="fragment" src="./examples/assets/3.jpg" />
+            <img class="fragment" src="./examples/assets/4.jpg" />
+            <img class="fragment" src="./examples/assets/5.jpg" />
+            <img class="fragment" src="./examples/assets/6.jpg" />
+            <img class="fragment" src="./examples/assets/7.jpg" />
+            <img class="fragment" src="./examples/assets/8.jpg" />
+          </div>
+        </section>
+        <section>
+          <h3>PlayCanvas library</h3>
+        </section>
         <section
           data-auto-animate
           data-background-video="https://playcanvas.com/static-assets/videos/features/PlayCanvas-Features-TheEditor-CBR4.mp4"
@@ -109,6 +140,13 @@
           data-background-video-muted
           class="playcanvas">
           <h3>PlayCanvas library examples</h3>
+        </section>
+        <section>
+          <h3>Thank you for watching!</h3>
+          <a href="https://github.com/VladimirG91">Github VladimirG91</a>
+          <a href="https://rs.school/"
+            ><img src="./examples/assets/logo-rs.svg" alt="RS_logo" width="300" height="300"
+          /></a>
         </section>
       </div>
     </div>
