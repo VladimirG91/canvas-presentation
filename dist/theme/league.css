@@ -381,3 +381,11 @@ section.has-light-background h6 {
     background-color: var(--r-background-color);
   }
 }
+
+.playcanvas {
+  top: 90px !important;
+}
+
+.playcanvas h3 {
+  color: black;
+}
